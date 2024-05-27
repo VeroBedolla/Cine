@@ -1,0 +1,90 @@
+* {
+    font-family: 'Segoe UI' Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ini {
+    text-shadow: rgb(218, 202, 202) 5px 2px 4px;
+    /*nos sirve para sobrear la letra*/
+    text-align: center;
+    font-size: larger;
+    font-size: 70px;  
+    font-style: initial;
+}
+body{
+    background: rgb(37, 28, 212);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(71, 71, 230, 0.737) 33%, rgba(0,211,255,1) 94%);
+}
+.topnav {
+    overflow: hidden;
+}
+
+/* Diseña los enlaces dentro de la barra de navegación */
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Cambiar el color de los enlaces al pasar el mouse */
+.topnav a:hover {
+    background-color: #5a50e7;
+    color: black;
+}
+
+/* Cambiar el color de los enlaces al pasar el mouse */
+.topnav a.active {
+    background-color: #5a50e7;
+    color: white;
+}
+section {
+    display: flex;
+    width: 90%;
+    height: 500px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+.menu{
+    font-size:50px ;
+    font-style: italic;
+    text-align: center;
+    text-decoration: overlines;
+    text-shadow: rgb(161, 79, 79) 5px 2px 4px;
+}
+.contenido{
+    font-size:35px ;
+    font-style: unset;;
+    text-align: center;
+    
+}
+section img {
+    /*darle estilo a las imagenes img que estan dentro de la seccion*/
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover {
+    cursor: no-drop;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+article img{
+    float:left;
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 5%;
+}
+.footer{
+    font-size:20px ;
+    font-style: normal;;
+    text-align:center;
+    color: rgb(65, 202, 226);
+    
+}
+

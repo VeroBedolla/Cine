@@ -1,0 +1,156 @@
+.topnav {      /*encabezado*/
+    overflow: hidden;
+} 
+body{
+    background-color:rgb(219, 230, 233);
+}
+/* Diseña los enlaces dentro de la barra de navegación */
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Cambiar el color de los enlaces al pasar el mouse */
+.topnav a:hover {
+    background-color: #5a50e7;
+    color: black;
+}
+
+/* Cambiar el color de los enlaces al pasar el mouse */
+.topnav a.active {
+    background-color: #5a50e7;
+    color: white;
+}
+.fixed{   
+    position: fixed;
+    top: 150px;
+    right: 20px;
+    background-color:violet;
+    padding: 20px;
+}
+
+.div2 {   /*se usa un box sizzing para este apartado*/
+    width: 600px;
+    height: 100px;  
+    padding: 50px;
+    margin-top: 10px;
+}
+.div1 {
+        width: 600px;
+        height: 100px; 
+        margin-left: 5%;
+}
+section {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-left: 20%;
+    margin-right: 5%;
+    margin-top: 15%;
+}
+
+section img{
+    padding: 10px;
+    width: 50px;
+    
+}
+.encabezado{
+    font-size:20px ;
+    font-style: italic;
+    margin-left: 2%;
+    margin-right: 15%;
+}
+.encabezado2{
+    font-style: italic;
+    margin-left: 2%;
+    margin-right: 15%;
+    font-size:15px ;
+}
+.container {
+    width: 80%;
+    margin: 10%;
+    margin-left: 10%;
+}
+.forma-linea2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+}
+.forma-linea2 > .tabla1,
+.forma-linea2 > .cunjunto2,
+.forma-linea2 > .tabla2{
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+.tabla1 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.conjunto2 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+.tabla2{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.forma-grupo {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.forma-control {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #aec3d8;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn {               /*para que el boton se ilumine*/
+    color:white;
+    text-decoration: none;
+    width: 12vw;
+    font-size: 22px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: .5vw 1vw;
+    transition: all  0.6s ease;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,0.8827906162464986) 8%, rgba(252,70,107,0.7203256302521008) 100%);
+    border-radius: 15px;
+}
+.btn:hover {
+    box-shadow: 0 0 10px #ff0080, 0 0  30px #ff0080, 0 0 70px #ff0080;
+    background-color: #ff0080;
+}
+.footer{
+    font-size:20px ;
+    font-style: normal;;
+    text-align:center;
+    color: rgb(65, 202, 226);
+    
+}
+
+
+
+
+select {
+    appearance: none; /* Elimina el estilo por defecto del navegador */
+    -webkit-appearance: none; /* Para compatibilidad con WebKit */
+    -moz-appearance: none; /* Para compatibilidad con Firefox */
+    background-color: #fff; /* Color de fondo */
+    border: 1px solid #fff; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Incluir el borde y el padding en el cálculo del ancho */
+}

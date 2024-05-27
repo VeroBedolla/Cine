@@ -1,0 +1,172 @@
+.topnav {
+    overflow: hidden;
+}
+/* Diseña los enlaces dentro de la barra de navegación */
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Cambiar el color de los enlaces al pasar el mouse */
+.topnav a:hover {
+    background-color: #5a50e7;
+    color: black;
+}
+
+/* Cambiar el color de los enlaces al pasar el mouse */
+.topnav a.active {
+    background-color: #5a50e7;
+    color: white;
+}
+section {
+    display: flex;
+    width: 90%;
+    height: 500px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+section img {       /*darle estilo a las imagenes img que estan dentro de la seccion*/
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    margin-top: 20px;
+}
+section img:hover {
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.fixed {
+    position: fixed;
+    top: 150px;
+    right: 10px;
+    background: rgb(148,187,233);
+    background: radial-gradient(circle, rgba(148,187,233,0.5326505602240896) 0%, rgba(238,174,202,0.3617822128851541) 37%);
+    padding: 10px;
+    width: 10%;
+    display: flex; /*! para usar el align items se coloco la prop de display en flex */
+    align-items: center; /* forma vertical */
+    justify-content: center;           /* centrar el text de forma horizontal*/
+    text-align: center;                    /* para colocar la imgen junto al texto (en una misma linea)*/
+    z-index: 10;
+}
+
+.fixed img {
+    width: 15%;              
+    margin-right: 10px;      
+}
+.btn {               /*para que el boton se ilumine*/
+    color:white;
+    text-decoration: none;
+    width: 12vw;
+    font-size: 22px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: .5vw 1vw;
+    transition: all  0.6s ease;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,0.8827906162464986) 8%, rgba(252,70,107,0.7203256302521008) 100%);
+    border-radius: 15px;
+}
+.btn:hover {
+    box-shadow: 0 0 10px #ff0080, 0 0  30px #ff0080, 0 0 70px #ff0080;
+    background-color: #ff0080;
+}
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d0dee2;
+    color: #080707;
+    margin: 0;
+    padding: 20px;
+}
+    
+.container {
+    display: grid;
+    grid-template-columns: 300px;
+    gap: 150px;
+    max-width: 1200px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+/*Vista tablet*/
+@media(min-width:580px){
+    .container {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        gap: 150px;
+        max-width: 1200px;
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+    
+    }
+}
+
+
+@media(min-width:1080px){
+    .container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px 300px  ;
+        gap: 150px;
+        max-width: 1200px;
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+    
+    }
+}
+    
+.pelicula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cae4e7;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+   
+.pelicula img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+.images-opacity:hover{
+    opacity: 1;
+}
+.pelicula-info {
+    text-align: center;
+    margin-top: 30px;
+}
+.pelicula-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.image-opacity {          /* se agrega la opacidad*/
+    width: 100%;
+    height:fit-content;
+    opacity: 1; 
+    transition: opacity 0.9s; /* Se añade un tiempo en el que se aplica la opaicidad */
+}
+    
+.image-opacity:hover {
+    opacity: 1;  /* se agrega para que cuando el cursos pase se aplique la opacidad*/
+}
+.footer{
+    font-size:20px ;
+    font-style: normal;;
+    text-align:center;
+    color: rgb(65, 202, 226);
+}
+

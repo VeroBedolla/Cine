@@ -1,0 +1,81 @@
+.topnav {
+    overflow: hidden;
+}
+body{
+    background-color:rgb(219, 230, 233);
+}
+/* Diseña los enlaces dentro de la barra de navegación */
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Cambiar el color de los enlaces al pasar el mouse */
+.topnav a:hover {
+    background-color: #5a50e7;
+    color: black;
+}
+
+/* Cambiar el color de los enlaces al pasar el mouse */
+.topnav a.active {
+    background-color: #5a50e7;
+    color: white;
+}
+input{
+    color: black;
+    background: transparent;
+    border-color: rgb(19, 9, 9);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.lista{
+    font-size: larger;
+    font-size: 20px;  
+    font-style: initial;
+    margin-left: 5%;
+}
+.reg{
+    font-size: larger;
+    font-size: 25px;  
+    font-style: initial;
+}
+.btn {               /*para que el boton se ilumine*/
+    color:white;
+    text-decoration: none;
+    width: 12vw;
+    font-size: 22px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: .5vw 1vw;
+    transition: all  0.6s ease;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,0.8827906162464986) 8%, rgba(252,70,107,0.7203256302521008) 100%);
+    border-radius: 15px;
+}
+.btn:hover {
+    box-shadow: 0 0 10px #ff0080, 0 0  30px #ff0080, 0 0 70px #ff0080;
+    background-color: #ff0080;
+}
+.footer{
+    font-size:20px ;
+    font-style: normal;;
+    text-align:center;
+    color: rgb(65, 202, 226);
+    
+}
+
+a img{
+    margin: 15px;
+}
+
+.img-derecha{
+    float:right;
+    margin-top: 5%;
+    margin-right: 5%;
+    border-radius: 5%;
+}

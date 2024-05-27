@@ -1,0 +1,73 @@
+.topnav {
+    overflow: hidden;
+}
+/* Diseña los enlaces dentro de la barra de navegación */
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Cambiar el color de los enlaces al pasar el mouse */
+.topnav a:hover {
+    background-color: #5a50e7;
+    color: black;
+}
+
+/* Cambiar el color de los enlaces al pasar el mouse */
+.topnav a.active {
+    background-color: #5a50e7;
+    color: white;
+}
+.fixed{   
+    position: fixed;
+    top: 150px;
+    right: 20px;
+    background-color:violet;
+    padding: 20px;
+}
+aside img{
+    width: 3%;
+}
+.container_uno{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px  ;
+    gap: 150px;
+    max-width: 1200px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.uno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    }
+    .btn {               /*para que el boton se ilumine*/
+        color:white;     /*falta agregar margen para que el boton baje in poco*/
+        text-decoration: none;
+        width: 12vw;
+        font-size: 22px;
+        font-family: sans-serif;
+        text-align: center;
+        padding: .5vw 1vw;
+        transition: all  0.6s ease;
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,0.8827906162464986) 8%, rgba(252,70,107,0.7203256302521008) 100%);
+        border-radius: 15px;
+    }
+    .btn:hover {
+        box-shadow: 0 0 10px #ff0080, 0 0  30px #ff0080, 0 0 70px #ff0080;
+        background-color: #ff0080;
+    }
+.contenido{
+    font-size:15px ;
+    font-style: italic;
+    text-align: center;
+    text-decoration: overlines;
+}
