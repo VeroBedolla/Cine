@@ -1,3 +1,6 @@
+body{
+    background-color: #d0dee2;
+}
 .topnav {
     overflow: hidden;
 }
@@ -29,12 +32,14 @@
     background-color:violet;
     padding: 20px;
 }
-aside img{
-    width: 3%;
+.uno img{
+    outline: dashed;
+    width: 150px;
+    height: 150px;
 }
 .container_uno{
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px  ;
+    grid-template-columns: 300px ;
     gap: 150px;
     max-width: 1200px;
     margin-top: 100px;
@@ -66,8 +71,53 @@ aside img{
         background-color: #ff0080;
     }
 .contenido{
-    font-size:15px ;
+    font-size:22px ;
     font-style: italic;
     text-align: center;
     text-decoration: overlines;
+}
+.footer{
+    font-size:20px ;
+    font-style: normal;;
+    text-align:center;
+    color: rgb(65, 202, 226);
+}
+/*Vista tablet*/
+@media(min-width:620px){
+    .container_uno{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        gap: 150px;
+        max-width: 1200px;
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+    
+    }
+}
+
+
+@media(min-width:1080px){
+    .container_uno{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        gap: 150px;
+        max-width: 1200px;
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+    
+    }
+}
+@media(min-width:1350px){
+    .container_uno{
+        display: grid;
+        grid-template-columns: 300px 300px 300px 300px  ;
+        gap: 150px;
+        max-width: 1200px;
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+    
+    }
 }

@@ -13,10 +13,10 @@
     <div
         style="background: rgb(63,94,251); background: radial-gradient(circle, rgba(63,94,251,1) 13%, rgb(252, 69, 106)100%);">
         <div class="topnav">
-            <a href="/inicio.html">
+            <a href="/index.html">
                 <img width="180px" src="/iconos/Cinema Logo(copiar).png" alt="Logo de Cine">
             </a>
-            <a href="/inicio.html">Inicio</a>    <!--Menu superior junto con logo-->
+            <a href="/index.html">Inicio</a>    <!--Menu superior junto con logo-->
             <a href="/login.html">Login</a>
             <a class="active" href="/Cartelera.html">Cartelera</a>
             <a href="/Combos.html">Combos</a>
@@ -40,25 +40,21 @@
     </section>
     <div class="container">
         <div class="pelicula">
-            <input type="checkbox" id="check-modal">
-    
-            <!-- Imagen para abrir el modal -->
-            <label for="check-modal" class="abrir-modal">
+            <input type="checkbox" id="check-modal-gato">
+            <!-- Imagen para abrir el modal -->  <!--solo se aplica este modal a las primeras 4 pelis, esto para que no sea tan pesado el archivo-->
+            <label for="check-modal-gato" class="abrir-modal">
                 <img src="/images/gato.jpg" alt="Garfield: Fuera de Casa" class="image-opacity abrir-modal-img">
             </label>
-        
             <!-- El modal -->
             <div class="modal">
                 <div class="modal-content">
-                    <label for="check-modal" class="close-button">&times;</label>
+                    <label for="check-modal-gato" class="close-button">&times;</label>
                 
-                    <video controls autoplay loop>
+                    <video controls loop>
                         <source src="/videos/triller_gato.mp4" type="video/mp4">
                     </video>
-        
                 </div>
             </div>
-
             <div class="descripcion">
                 <h2>GARFIELD: FUERA DE CASA</h2>
                 <p>2D - 3D</p>
@@ -68,7 +64,20 @@
             </div>
         </div>
         <div class="pelicula">
-            <img src="/images/La-monja.webp" alt="La Monja" class="image-opacity">
+            <input type="checkbox" id="check-modal-monja">
+            <!-- Imagen para abrir el modal -->
+            <label for="check-modal-monja" class="abrir-modal">
+                <img src="/images/La-monja.webp" alt="La monja" class="image-opacity abrir-modal-img">
+            </label>
+            <!-- Este es modal -->
+            <div class="modal">
+                <div class="modal-content">
+                    <label for="check-modal-monja" class="close-button">&times;</label>
+                    <video controls loop>
+                        <source src="/videos/LAMONJA.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
             <div class="descripcion">
                 <h2>LA MONJA</h2>
                 <p>2D - 3D</p>
@@ -78,7 +87,20 @@
             </div>
         </div>
         <div class="pelicula">
-            <img src="/images/intensamente.webp" alt="Intensamente" class="image-opacity" >
+            <input type="checkbox" id="check-modal-intensamente">
+            <!-- Imagen para abrir el modal -->
+            <label for="check-modal-intensamente" class="abrir-modal">
+                <img src="/images/intensamente.webp" alt="Intensamente" class="image-opacity abrir-modal-img">
+            </label>
+            <!-- El modal -->
+            <div class="modal">
+                <div class="modal-content">
+                    <label for="check-modal-intensamente" class="close-button">&times;</label>
+                    <video controls loop>
+                        <source src="/videos/INTENSAMENTE.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
             <div class="descripcion">
                 <h2>INTENSAMENTE</h2>
                 <p>2D - 3D</p>
@@ -88,9 +110,22 @@
             </div>
         </div>
         <div class="pelicula">
-            <img src="/images/moda.webp" alt="El Diablo Viste a la Moda" class="image-opacity">
+            <input type="checkbox" id="check-modal-piloto">
+            <!-- Imagen para abrir el modal -->
+            <label for="check-modal-piloto" class="abrir-modal">
+                <img src="/images/piloto.jpg" alt="Garfield: Fuera de Casa" class="image-opacity abrir-modal-img">
+            </label>
+            <!-- El modal -->
+            <div class="modal">
+                <div class="modal-content">
+                    <label for="check-modal-piloto" class="close-button">&times;</label>
+                    <video controls loop>
+                        <source src="/videos/ELPILOTO.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
             <div class="descripcion">
-                <h2>EL DIABLO VISTE A LA MODA</h2>
+                <h2>EL PILOTO</h2>
                 <p>2D - 3D</p>
                 <p>Esp</p>
                 <p>16:00 - 18:00 - 20:00</p>
@@ -118,9 +153,9 @@
             </div>
         </div>
         <div class="pelicula">
-            <img src="/images/piloto.jpg" alt="piloto" class="image-opacity">
+            <img src="/images/gambito-de-reina.jpeg" alt="reina" class="image-opacity">
             <div class="descripcion">
-                <h2>EL PILOTO</h2>
+                <h2>DAMA DE GAMBITO</h2>
                 <p>2D - 3D</p>
                 <p>Esp</p>
                 <p>16:00 - 19:30 - 2:00</p>
@@ -128,9 +163,9 @@
             </div>
         </div>
         <div class="pelicula">
-            <img src="/images/gambito-de-reina.jpeg" alt="reina" class="image-opacity">
+            <img src="/images/moda.webp" alt="El diablo viste a la moda" class="image-opacity">
             <div class="descripcion">
-                <h2>GAMBITO DE REINA</h2>
+                <h2>EL DIABLO VISTE A LA MODA</h2>
                 <p>2D - 3D</p>
                 <p>Esp</p>
                 <p>13:00 - 15:30 - 19:00</p>
@@ -178,17 +213,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
 </body>
 <footer> <!--mensaje final-->
     <div style="background: rgba(232, 232, 238, 0.938);">

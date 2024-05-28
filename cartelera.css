@@ -175,24 +175,8 @@ body {
     text-align:center;
     color: rgb(65, 202, 226);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Ocultar el checkbox */
-#check-modal {
+#check-modal-gato, #check-modal-monja, #check-modal-intensamente,#check-modal-piloto {
     display: none;
 }
 
@@ -236,7 +220,10 @@ body {
 }
 
 /* Mostrar el modal cuando el checkbox está marcado */
-#check-modal:checked + label + .modal {
+#check-modal-gato:checked + label + .modal,
+#check-modal-monja:checked + label + .modal,
+#check-modal-intensamente:checked + label + .modal,
+#check-modal-piloto:checked + label + .modal  {
     display: flex;
 }
 
@@ -245,6 +232,9 @@ body {
     display: none;
 }
 
-#check-modal:checked + label + .modal video {
+#check-modal-gato:checked + label + .modal video,
+#check-modal-monja:checked + label + .modal video,
+#check-modal-intensamente:checked + label + .modal video,
+#check-modal-piloto:checked + label + .modal video{
     display: block;
 }
