@@ -2,7 +2,7 @@ body{
     background-color: #d0dee2;
 }
 .topnav {
-    overflow: hidden;
+    overflow: hidden;  /*!por solicitud de punto 4*/
 }
 /* Diseña los enlaces dentro de la barra de navegación */
 .topnav a {
@@ -33,7 +33,7 @@ body{
     padding: 20px;
 }
 .uno img{
-    outline: dashed;
+    outline: dashed; /*! por solicitud de punto 4*/
     width: 150px;
     height: 150px;
 }
