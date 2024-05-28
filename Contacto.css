@@ -41,7 +41,7 @@ body{
     border: 1px solid #ccc;
 }
 .div1 {
-        width: 600px;
+        width: 90%;
         height: 100px; 
         margin-left: 5%;
 }
@@ -84,7 +84,7 @@ section img{
 .grid{
     display: grid;
     grid-template-columns: 1fr ;
-    gap: 50px;
+    gap: 20px;
 }
 .forma-linea2 > .tabla1,
 .forma-linea2 > .cunjunto2,
@@ -93,7 +93,7 @@ section img{
 }
 .tabla1 {
     flex: 0 0 50%;
-    max-width: 90%;
+    max-width: 350px;
     padding-left: 0;
 }
 .conjunto2 {
@@ -161,7 +161,7 @@ select {
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr ;
-        gap: 150px;
+        gap: 20px;
     }
     .tabla1 {
         flex: 0 0 50%;
