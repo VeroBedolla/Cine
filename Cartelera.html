@@ -40,7 +40,25 @@
     </section>
     <div class="container">
         <div class="pelicula">
-            <img src="/images/gato.jpg" alt="Garfield: Fuera de Casa" class="image-opacity">
+            <input type="checkbox" id="check-modal">
+    
+            <!-- Imagen para abrir el modal -->
+            <label for="check-modal" class="abrir-modal">
+                <img src="/images/gato.jpg" alt="Garfield: Fuera de Casa" class="image-opacity abrir-modal-img">
+            </label>
+        
+            <!-- El modal -->
+            <div class="modal">
+                <div class="modal-content">
+                    <label for="check-modal" class="close-button">&times;</label>
+                
+                    <video controls autoplay loop>
+                        <source src="/videos/triller_gato.mp4" type="video/mp4">
+                    </video>
+        
+                </div>
+            </div>
+
             <div class="descripcion">
                 <h2>GARFIELD: FUERA DE CASA</h2>
                 <p>2D - 3D</p>
@@ -160,3 +178,24 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<footer> <!--mensaje final-->
+    <div style="background: rgba(232, 232, 238, 0.938);">
+        <div class="footer">
+            <p>Contenido del sitio 2024© Derechos reservados MOVIE NIGTH, S.A. de C.V.</P>
+        </div>
+    </div>
+</footer>
+
+</html>

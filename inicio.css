@@ -69,16 +69,34 @@ section img {
     transition: .5s ease;
 }
 section img:hover {
-    cursor: no-drop;
+    cursor:all-scroll;
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
 }
+
+article {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 150px;
+    margin: 5%;
+}
+
+@media(min-width:1080px){
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin: 2%;
+    }
+}
+
 article img{
     float:left;
     margin-top: 5%;
     margin-left: 5%;
     border-radius: 5%;
+    width: 90%;
 }
 .footer{
     font-size:20px ;
